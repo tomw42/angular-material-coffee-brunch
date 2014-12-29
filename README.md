@@ -4,7 +4,7 @@
 * Coffeescript
 * [Stylus](http://learnboost.github.io/stylus/)
 * [Jade](http://jade-lang.com/)
-* [Angular.js](http://angularjs.org/)
+* [Angular.js](https://angularjs.org/)
 * [Angular Material](https://material.angularjs.org/)
 
 
@@ -28,7 +28,3 @@ Most likely you have **Brunch** installed. In this case the approach is pretty s
 ### CoffeeScript - ready to use
 
 All angular.js controllers, services, factories, directives are implemented as CoffeScript classes as angular modules which leads to a much more convenient implementation and better maintainability. On top of it, this provides all controllers as local controllers and avoids issues with minification.
-
-
-
-
