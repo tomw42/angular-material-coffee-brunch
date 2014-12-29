@@ -1,0 +1,5 @@
+div.tabsbar(ng-controller='TabsCtrl as tabs')
+  md-tabs
+    md-tab(md-on-select="tabs.selectedTab('/todo')", label='Todo')
+    md-tab(md-on-select="tabs.selectedTab('/view1')", label='View1')
+    md-tab(md-on-select="tabs.selectedTab('/view2')", label='View2')

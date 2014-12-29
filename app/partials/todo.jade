@@ -1,0 +1,17 @@
+div(ng-app='ng-app', layout='row', layout-align='center center')
+  div(flex='20')
+  div(flex='60')
+    h2 Todo
+    md-divider
+    div(ng-controller='TodoCtrl as todo')
+      h5 Version: {{todo.version.getVersion()}}
+      span {{todo.remaining()}} of {{todo.todos.length}} remaining
+      |  [
+      a(href='', ng-click='todo.archive()') archive
+      | ]
+      md-checkbox(ng-repeat='t in todo.todos', ng-model='t.done', aria-label='Checkbox') {{t.text}}
+      form(ng-submit='todo.addTodo()')
+        md-button.md-raised.md-primary(aria-label='test') Add
+        div.col-sm-2
+          md-text-float(label='Todo Input', ng-model='todo.todoText', size='30', placeholder='add new todo here')
+  div(flex='20')
